@@ -24,7 +24,7 @@ form.addEventListener('submit', (event) => {
   const amount = parseInt(form.elements.amount.value);
 
   for (let i = 0; i < amount; i++) {
-    const position = i + 1;
+    const position = i+1;
     const promise = createPromise(position, delay + i * step);
     promise.then(({ position, delay }) => {
       Notiflix.Notify.success(`Fulfilled promise ${position} in ${delay}ms`);
