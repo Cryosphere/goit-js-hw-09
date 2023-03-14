@@ -33,3 +33,20 @@ form.addEventListener('submit', (event) => {
     });
   }
 });
+
+
+function solution(str, ending){
+  // TODO: complete
+  let rstr = [];
+  rstr =[...str];
+  let argn = [ ...ending ];
+  for(let i=argn.length-1;i>=0;i--){
+    if(!argn[i]===rstr[i]){
+      console.log(i,argn[i]);
+    }
+    console.log(i,argn[i],rstr[i]);
+  }
+  return true;
+}
+console.log(solution('sumo', 'amo'));
+ 
